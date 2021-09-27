@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art & design Portfolio</title>
+    <!-- css---link -->
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <!-- font--link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body
+    onmousewheel="document.querySelector('.nav-icons').classList.remove('block')"
+  >
+    <div class="main-wrapper">
+      <nav>
+        <div class="container">
+          <img class="img" src="./assets/images/default-logo.png" alt="logo" />
+          <div class="nav-links">
+            <div class="main-nav">
+              <p class="nav-text" id="main-text">Menu</p>
+              <i class="fas fa-bars nav-icon" onclick="toggles()"></i>
+            </div>
+            <div class="nav-icons">
+              <div class="li" onmouseover="over('home')">
+                <a href="#">home</a>
+              </div>
+              <div class="li" onmouseover="over('about')">
+                <a href="#about">about</a>
+              </div>
+              <div class="li" onmouseover="over('projects')">
+                <a href="#projects">projects</a>
+              </div>
+              <div class="li" onmouseover="over('brands')">
+                <a href="#brand">brand</a>
+              </div>
+              <div class="li" onmouseover="over('team')">
+                <a href="#team">team</a>
+              </div>
+              <div class="li" onmouseover="over('contact')">
+                <a href="#contact">contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-section">
+        <div class="text-content">
+          <p class="title">BRANDING</p>
+          <p class="subtitle">A full service design studio</p>
+          <p class="text">
+            We offer a wide range of professional tailor- <br />
+            made design solutions, from Brand design <br />
+            and illustration to Websites and Infographics
+          </p>
+          <p class="freepick">
+            Image from <a href="https://www.freepik.com/"> Freepik</a>
+          </p>
+          <button class="read">read more</button>
+        </div>
+        <img src="./assets/images/header-img.jpg" alt="header-img" />
+      </div>
+
+      <div class="images-section">
+        <div class="container">
+          <img
+            class="lamp"
+            src="./assets/images/one-section.jpg"
+            alt="lamp images"
+          />
+
+          <img class="line" src="./assets/images/dashwd.png" alt="dashed" />
+          <div class="cards-wrapper">
+            <div class="card">
+              <div class="icon-box">
+                <i class="fas fa-camera-retro"></i>
+              </div>
+              <p class="text"></p>
+            </div>
+          </div>
+          <p class="freepick">
+            Image from <a href="https://www.freepik.com/"> Freepik</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="about-section" id="about">
+        <div data-aos="zoom-in-right" class="about-title">
+          <p class="about">about</p>
+          <p class="text">We build brands</p>
+          <img src="./assets/images/about.jpg" alt="patsan" class="portrait" />
+        </div>
+        <div data-aos="zoom-in-left" class="about-text">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam qui
+            consequatur ullam alias at non a esse ea iure similique omnis maxime
+            repellat, reiciendis nisi autem expedita error commodi eveniet!
+          </p>
+          <button class="read">read more</button>
+        </div>
+      </div>
+
+      <div class="project-section" id="projects">
+        <div class="title-box">
+          <p class="title">Identic Projects</p>
+          <p class="subtitle">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+            non amet <br />
+            adipisci eveniet quae corrupti! <i>IMages from </i>
+            <a href="#" style="color: black; text-decoration: underline"
+              >Freepik</a
+            >
+          </p>
+        </div>
+        <div data-aos="zoom-out-up" class="project-content">
+          <div class="project">
+            <img src="./assets/images/project-1.jpg" alt="project-image" />
+          </div>
+          <div class="project project-2">
+            <p class="text">
+              We're masters in our craft, focusing on art direction & styling
+            </p>
+            <p class="line"></p>
+          </div>
+          <div class="project">
+            <img src="./assets/images/projects-3.jpg" alt="project-image" />
+          </div>
+          <div class="project">
+            <img src="./assets/images/project-4.jpg" alt="project-image" />
+          </div>
+          <div class="project">
+            <img src="./assets/images/project-5.jpg" alt="project-image" />
+          </div>
+          <div class="project">
+            <img src="./assets/images/project-6.jpg" alt="project-image" />
+          </div>
+        </div>
+      </div>
+
+      <div class="brands-section" id="brand">
+        <div class="container">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="main-text-wrapper"
+          >
+            <p class="subtitle">We create brands</p>
+            <p class="title">Creative design</p>
+            <p class="text">
+              Paragraph. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quia, magnam. Ab unde enim aliquam tempora at praesentium
+              tenetur eius illo cum quam eum
+              <span style="text-decoration: underline"> suscipit</span>,
+              consectetur officiis rerum quia nostrum pariatur a ea odio
+              asperiores nisi, dolor minus labore. Excepturi odit obcaecati,
+              corrupti sunt nostrum deleniti.
+            </p>
+            <button class="learn">learn more</button>
+          </div>
+          <div class="story-wrapper" data-aos="flip-right">
+            <img
+              src="./assets/images/\/story.jpg"
+              alt="lemp
+              "
+            />
+            <p class="title">Our Story</p>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quae
+              eveniet esse veritatis animi consequuntur minima hic. Consequatur
+              accusantium, enim voluptas aut similique quia minima magnam
+              perferendis quam aperiam quod. Obcaecati, voluptates?
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            class="story-2-wrapper"
+          >
+            <img
+              src="./assets/images/story-2.jpg"
+              alt="lamp
+              "
+            />
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quae
+              eveniet esse veritatis animi consequuntur minima hic. Consequatur
+              accusantium, enim voluptas aut similique quia minima magnam
+              perferendis quam aperiam quod. Obcaecati, voluptates?
+            </p>
+            <p class="freepick">
+              Image from <a href="https://www.freepik.com/"> Freepik</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-section" id="team">
+        <div class="team-member-box"></div>
+      </div>
+
+      <div class="contact-section" id="contact">
+        <div class="contact-main-text-box">
+          <div data-aos="fade-right" class="black-contact-box">
+            <div class="box">
+              <i class="fas fa-mobile-alt"></i>
+              <p class="number">
+                123-4567-8910
+                <br />
+                123-4567-8910 (Toll Free)
+              </p>
+            </div>
+            <div class="box">
+              <i class="fas fa-mobile-alt"></i>
+              <p class="number">
+                123-4567-8910
+                <br />
+                123-4567-8910 (Toll Free)
+              </p>
+            </div>
+            <div class="box">
+              <i class="fas fa-mobile-alt"></i>
+              <p class="number">
+                123-4567-8910
+                <br />
+                123-4567-8910 (Toll Free)
+              </p>
+            </div>
+          </div>
+          <div data-aos="fade-left" class="white-content">
+            <p class="title">Contact Us</p>
+            <p class="text">
+              Sample text. Click to select the text box. Click again or double
+              click to start editing the text
+            </p>
+            <input type="text" class="name" placeholder="Enter your Name" />
+            <input
+              type="email"
+              class="email"
+              placeholder="Enter your Valid Email Address"
+            />
+            <textarea placeholder="Enter your Message"></textarea>
+            <button class="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---js--link-->
+    <script src="js/script.js"></script>
+    <!-- aos link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>
